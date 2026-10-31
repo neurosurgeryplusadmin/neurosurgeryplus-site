@@ -6,6 +6,7 @@
 <title>Page not found – Neurosurgery Plus</title>
 <meta name="description" content="This page does not exist on the Neurosurgery Plus website.">
 <meta name="robots" content="noindex">
+<meta name="apple-itunes-app" content="app-id=6816378125">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
 <style>
@@ -214,6 +215,26 @@ main {
   text-align: center;
   margin: 20px 0;
   font-weight: 600;
+}
+
+/* Apple's badge rules: unmodified artwork, at least 40 px high on screen,
+   clear space of a quarter of its height (here 48 px high -> 12 px) with
+   nothing else inside it. */
+.app-store-badge {
+  display: inline-block;
+  padding: 12px;
+  line-height: 0;
+}
+
+.app-store-badge img {
+  height: 48px;
+  width: auto;
+}
+
+.store .android-soon {
+  margin: 0;
+  font-weight: 400;
+  color: var(--muted);
 }
 
 .organisers {

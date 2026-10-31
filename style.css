@@ -205,6 +205,26 @@ main {
   font-weight: 600;
 }
 
+/* Apple's badge rules: unmodified artwork, at least 40 px high on screen,
+   clear space of a quarter of its height (here 48 px high -> 12 px) with
+   nothing else inside it. */
+.app-store-badge {
+  display: inline-block;
+  padding: 12px;
+  line-height: 0;
+}
+
+.app-store-badge img {
+  height: 48px;
+  width: auto;
+}
+
+.store .android-soon {
+  margin: 0;
+  font-weight: 400;
+  color: var(--muted);
+}
+
 .organisers {
   background: var(--box-bg);
   border: 1px solid var(--box-border);
